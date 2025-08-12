@@ -13,6 +13,9 @@ import rehypePrettyCode from 'rehype-pretty-code'
 import remarkEmoji from 'remark-emoji'
 import remarkMath from 'remark-math'
 import rehypeDocument from 'rehype-document'
+// Custom
+import rehypeCalloutsPlugin from './src/plugins/rehype-callouts'
+// import rehypeCallouts from 'rehype-callouts'
 
 import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections'
 import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
@@ -107,6 +110,7 @@ export default defineConfig({
           },
         },
       ],
+      rehypeCalloutsPlugin,
     ],
     remarkPlugins: [remarkMath, remarkEmoji],
   },

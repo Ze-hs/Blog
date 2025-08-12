@@ -1,0 +1,224 @@
+
+@theme {
+    :root {
+        /* Note */
+        --callout-note-text: #1e3a8a;       /* blue-800 */
+        --callout-note-bg: #dbeafe;         /* blue-100 */
+        --callout-note-border: #93c5fd;     /* blue-400 */
+      
+        /* Tip */
+        --callout-tip-text: #065f46;        /* emerald-800 */
+        --callout-tip-bg: #d1fae5;          /* emerald-100 */
+        --callout-tip-border: #34d399;      /* emerald-400 */
+      
+        /* Warning */
+        --callout-warning-text: #92400e;    /* amber-800 */
+        --callout-warning-bg: #fef3c7;      /* amber-100 */
+        --callout-warning-border: #fbbf24;  /* amber-400 */
+      
+        /* Danger */
+        --callout-danger-text: #991b1b;     /* red-800 */
+        --callout-danger-bg: #fee2e2;       /* red-100 */
+        --callout-danger-border: #f87171;   /* red-400 */
+      
+        /* Important */
+        --callout-important-text: #7c2d12;  /* orange-800 */
+        --callout-important-bg: #fed7aa;    /* orange-100 */
+        --callout-important-border: #fbbf24; /* orange-400 */
+      
+        /* Definition */
+        --callout-definition-text: #1e40af; /* indigo-800 */
+        --callout-definition-bg: #c7d2fe;   /* indigo-100 */
+        --callout-definition-border: #818cf8; /* indigo-400 */
+      
+        /* Theorem */
+        --callout-theorem-text: #134e4a;    /* teal-800 */
+        --callout-theorem-bg: #99f6e4;      /* teal-100 */
+        --callout-theorem-border: #5eead4;  /* teal-400 */
+      
+        /* Lemma */
+        --callout-lemma-text: #713f12;      /* amber-900 */
+        --callout-lemma-bg: #fef3c7;        /* amber-100 */
+        --callout-lemma-border: #fbbf24;    /* amber-400 */
+      
+        /* Proof */
+        --callout-proof-text: #065f46;      /* emerald-800 */
+        --callout-proof-bg: #d1fae5;        /* emerald-100 */
+        --callout-proof-border: #34d399;    /* emerald-400 */
+      
+        /* Corollary */
+        --callout-corollary-text: #1e40af;  /* indigo-800 */
+        --callout-corollary-bg: #c7d2fe;    /* indigo-100 */
+        --callout-corollary-border: #818cf8; /* indigo-400 */
+      
+        /* Proposition */
+        --callout-proposition-text: #7c3aed; /* purple-800 */
+        --callout-proposition-bg: #ddd6fe;   /* purple-100 */
+        --callout-proposition-border: #a78bfa; /* purple-400 */
+      
+        /* Axiom */
+        --callout-axiom-text: #78350f;       /* orange-900 */
+        --callout-axiom-bg: #fed7aa;         /* orange-100 */
+        --callout-axiom-border: #fbbf24;     /* orange-400 */
+      
+        /* Conjecture */
+        --callout-conjecture-text: #4b5563;  /* gray-600 */
+        --callout-conjecture-bg: #e5e7eb;    /* gray-200 */
+        --callout-conjecture-border: #9ca3af; /* gray-400 */
+      
+        /* Notation */
+        --callout-notation-text: #0369a1;    /* sky-800 */
+        --callout-notation-bg: #bae6fd;      /* sky-100 */
+        --callout-notation-border: #7dd3fc;  /* sky-400 */
+      
+        /* Remark */
+        --callout-remark-text: #6b7280;      /* gray-500 */
+        --callout-remark-bg: #f3f4f6;        /* gray-100 */
+        --callout-remark-border: #d1d5db;    /* gray-300 */
+      
+        /* Intuition */
+        --callout-intuition-text: #065f46;   /* emerald-800 */
+        --callout-intuition-bg: #d1fae5;     /* emerald-100 */
+        --callout-intuition-border: #34d399; /* emerald-400 */
+      
+        /* Recall */
+        --callout-recall-text: #4338ca;      /* indigo-700 */
+        --callout-recall-bg: #e0e7ff;        /* indigo-100 */
+        --callout-recall-border: #a5b4fc;    /* indigo-400 */
+      
+        /* Explanation */
+        --callout-explanation-text: #4b5563; /* gray-600 */
+        --callout-explanation-bg: #e5e7eb;   /* gray-200 */
+        --callout-explanation-border: #9ca3af; /* gray-400 */
+      
+        /* Example */
+        --callout-example-text: #334155;     /* slate-700 */
+        --callout-example-bg: #cbd5e1;       /* slate-200 */
+        --callout-example-border: #94a3b8;   /* slate-400 */
+      
+        /* Exercise */
+        --callout-exercise-text: #6b7280;    /* gray-500 */
+        --callout-exercise-bg: #f3f4f6;      /* gray-100 */
+        --callout-exercise-border: #d1d5db;  /* gray-300 */
+      
+        /* Problem */
+        --callout-problem-text: #b91c1c;     /* red-700 */
+        --callout-problem-bg: #fecaca;       /* red-200 */
+        --callout-problem-border: #f87171;   /* red-400 */
+      
+        /* Answer */
+        --callout-answer-text: #065f46;      /* emerald-800 */
+        --callout-answer-bg: #d1fae5;        /* emerald-100 */
+        --callout-answer-border: #34d399;    /* emerald-400 */
+      
+        /* Solution */
+        --callout-solution-text: #065f46;    /* emerald-800 */
+        --callout-solution-bg: #d1fae5;      /* emerald-100 */
+        --callout-solution-border: #34d399;  /* emerald-400 */
+      
+        /* Summary */
+        --callout-summary-text: #1e40af;     /* indigo-800 */
+        --callout-summary-bg: #c7d2fe;       /* indigo-100 */
+        --callout-summary-border: #818cf8;   /* indigo-400 */
+      }
+      
+      /* Dark mode overrides */
+      .dark {
+        --callout-note-text: #bfdbfe;       /* blue-300 */
+        --callout-note-bg: #1e40af;         /* blue-900 */
+        --callout-note-border: #3b82f6;     /* blue-500 */
+      
+        --callout-tip-text: #d1fae5;        /* emerald-100 */
+        --callout-tip-bg: #064e3b;          /* emerald-900 */
+        --callout-tip-border: #10b981;      /* emerald-500 */
+      
+        --callout-warning-text: #fbbf24;    /* amber-400 */
+        --callout-warning-bg: #78350f;      /* amber-900 */
+        --callout-warning-border: #f59e0b;  /* amber-500 */
+      
+        --callout-danger-text: #fecaca;     /* red-300 */
+        --callout-danger-bg: #7f1d1d;       /* red-900 */
+        --callout-danger-border: #ef4444;   /* red-500 */
+      
+        --callout-important-text: #fb923c;  /* orange-400 */
+        --callout-important-bg: #7c2d12;    /* orange-900 */
+        --callout-important-border: #f97316; /* orange-500 */
+      
+        --callout-definition-text: #c7d2fe; /* indigo-200 */
+        --callout-definition-bg: #312e81;   /* indigo-900 */
+        --callout-definition-border: #6366f1; /* indigo-500 */
+      
+        --callout-theorem-text: #99f6e4;    /* teal-200 */
+        --callout-theorem-bg: #134e4a;      /* teal-900 */
+        --callout-theorem-border: #2dd4bf;  /* teal-400 */
+      
+        --callout-lemma-text: #fbbf24;      /* amber-400 */
+        --callout-lemma-bg: #78350f;        /* amber-900 */
+        --callout-lemma-border: #f59e0b;    /* amber-500 */
+      
+        --callout-proof-text: #d1fae5;      /* emerald-100 */
+        --callout-proof-bg: #064e3b;        /* emerald-900 */
+        --callout-proof-border: #10b981;    /* emerald-500 */
+      
+        --callout-corollary-text: #c7d2fe;  /* indigo-200 */
+        --callout-corollary-bg: #312e81;    /* indigo-900 */
+        --callout-corollary-border: #6366f1; /* indigo-500 */
+      
+        --callout-proposition-text: #d8b4fe; /* purple-300 */
+        --callout-proposition-bg: #5b21b6;   /* purple-900 */
+        --callout-proposition-border: #a78bfa; /* purple-400 */
+      
+        --callout-axiom-text: #fcd34d;       /* yellow-400 */
+        --callout-axiom-bg: #78350f;         /* orange-900 */
+        --callout-axiom-border: #f59e0b;     /* amber-500 */
+      
+        --callout-conjecture-text: #9ca3af;  /* gray-400 */
+        --callout-conjecture-bg: #374151;    /* gray-700 */
+        --callout-conjecture-border: #6b7280; /* gray-500 */
+      
+        --callout-notation-text: #7dd3fc;    /* sky-400 */
+        --callout-notation-bg: #0c4a6e;      /* sky-900 */
+        --callout-notation-border: #38bdf8;  /* sky-500 */
+      
+        --callout-remark-text: #9ca3af;      /* gray-400 */
+        --callout-remark-bg: #1f2937;        /* gray-800 */
+        --callout-remark-border: #4b5563;    /* gray-600 */
+      
+        --callout-intuition-text: #d1fae5;   /* emerald-100 */
+        --callout-intuition-bg: #064e3b;     /* emerald-900 */
+        --callout-intuition-border: #10b981; /* emerald-500 */
+      
+        --callout-recall-text: #a5b4fc;      /* indigo-400 */
+        --callout-recall-bg: #312e81;        /* indigo-900 */
+        --callout-recall-border: #6366f1;    /* indigo-500 */
+      
+        --callout-explanation-text: #9ca3af; /* gray-400 */
+        --callout-explanation-bg: #374151;   /* gray-700 */
+        --callout-explanation-border: #6b7280; /* gray-500 */
+      
+        --callout-example-text: #94a3b8;     /* slate-400 */
+        --callout-example-bg: #1e293b;       /* slate-800 */
+        --callout-example-border: #475569;   /* slate-600 */
+      
+        --callout-exercise-text: #d1d5db;    /* gray-300 */
+        --callout-exercise-bg: #1f2937;      /* gray-800 */
+        --callout-exercise-border: #4b5563;  /* gray-700 */
+      
+        --callout-problem-text: #fca5a5;     /* red-300 */
+        --callout-problem-bg: #7f1d1d;       /* red-900 */
+        --callout-problem-border: #ef4444;   /* red-500 */
+      
+        --callout-answer-text: #d1fae5;      /* emerald-100 */
+        --callout-answer-bg: #064e3b;        /* emerald-900 */
+        --callout-answer-border: #10b981;    /* emerald-500 */
+      
+        --callout-solution-text: #d1fae5;    /* emerald-100 */
+        --callout-solution-bg: #064e3b;      /* emerald-900 */
+        --callout-solution-border: #10b981;  /* emerald-500 */
+      
+        --callout-summary-text: #c7d2fe;     /* indigo-200 */
+        --callout-summary-bg: #312e81;       /* indigo-900 */
+        --callout-summary-border: #6366f1;   /* indigo-500 */
+      }
+        
+}

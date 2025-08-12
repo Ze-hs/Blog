@@ -1,0 +1,58 @@
+.callout {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+  }
+  
+.callout-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: 500;
+    line-height: 1;
+}
+  
+.callout-title::-webkit-details-marker {
+display: none;
+}
+
+.callout-title-icon svg {
+overflow: visible !important;
+display: inline-block;
+
+vertical-align: text-bottom;
+
+fill: currentColor;
+}
+
+.callout-content > :first-child {
+margin-top: 1rem;
+}
+
+.callout-content > :last-child {
+margin-bottom: 0;
+}
+
+.callout[data-collapsible='true'] .callout-title {
+cursor: pointer;
+}
+
+.callout[data-collapsible='true'] .callout-fold-icon {
+display: flex;
+align-items: center;
+padding-inline-end: 8px;
+}
+
+.callout[data-collapsible='true'] > .callout-title .callout-fold-icon svg {
+transform: rotate(-90deg);
+transition: transform 100ms ease-in-out;
+}
+
+.callout[data-collapsible='true'][open] > .callout-title .callout-fold-icon svg {
+transform: none;
+}
+
+.callout-fold-icon {
+margin-left: -2px;
+}
