@@ -5,11 +5,11 @@
 
 @theme inline {
   --font-sans:
-    Geist, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    'Jetbrains Mono', 'Geist', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
-    Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+    'Jetbrains Mono', 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -47,6 +47,14 @@
 @font-face {
   font-family: 'Geist Mono';
   src: url('/fonts/GeistMonoVF.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;

@@ -1,6 +1,7 @@
 import rehypeCallouts from 'rehype-callouts'
 import { type IconifyJSON, icons } from '@iconify-json/lucide'
 import { getIconData, iconToSVG, iconToHTML, replaceIDs } from '@iconify/utils'
+import type { RehypePlugin } from 'node_modules/@astrojs/markdown-remark/dist/types'
 
 // Return the svg (html) code of a current icon set from iconify
 const getSVG = (iconSet: IconifyJSON, name: string) => {
@@ -16,7 +17,20 @@ const getSVG = (iconSet: IconifyJSON, name: string) => {
   return iconToHTML(replaceIDs(data.body), data.attributes)
 }
 
-const callouts = {
+type calloutType = {
+  title: string
+  indicator: string
+  style: string
+  textColor: string
+}
+
+type calloutListType = {
+  [key: string]: calloutType
+}
+
+type pluginConfigType = [RehypePlugin<any[]>, any]
+
+const callouts: calloutListType = {
   note: {
     title: 'Note',
     indicator: getSVG(icons, 'info'),
@@ -163,20 +177,20 @@ const callouts = {
   },
 }
 
-export default [
+const pluginConfig: pluginConfigType = [
   rehypeCallouts,
   {
     theme: 'obsidian',
     callouts,
     props: {
       //   titleProps: { class: 'custom-class1' },
-      contentProps: { className: ['callout'] },
-      containerProps(_, type) {
+      containerProps(_: any, type: string) {
         const newProps: Record<string, string> = {}
-        newProps.class = `border-l-[0.25em] ${callouts[type].textColor} ${callouts[type].style}`
+        newProps.class = `callout border-l-[0.25em] ${callouts[type]?.textColor} ${callouts[type]?.style}`
 
         return newProps
       },
     },
   },
 ]
+export default pluginConfig
