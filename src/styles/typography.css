@@ -89,7 +89,7 @@
     }
 
     :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
-      @apply bg-muted/50 text-foreground relative rounded-sm px-[0.3rem] py-[0.2rem] text-sm font-medium break-words;
+      @apply bg-muted/50 text-foreground relative rounded-xs px-[0.3rem] py-[0.2rem] text-sm font-medium break-words;
       @apply [&>span[data-line='']>*]:text-(--shiki-light) dark:[&>span[data-line='']>*]:text-(--shiki-dark);
     }
 
@@ -140,7 +140,7 @@
     }
 
     :where(kbd):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
-      @apply text-foreground bg-muted rounded-md border px-2 py-1 text-xs font-medium;
+      @apply text-foreground bg-muted rounded-xs border px-2 py-1 text-xs font-medium;
     }
 
     :where(.katex-display):not(

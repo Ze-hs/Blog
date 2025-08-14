@@ -26,7 +26,7 @@ const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
 ---
 
 <div
-  class="hover:bg-secondary/50 rounded-xl border p-4 transition-colors duration-300 ease-in-out"
+  class="hover:bg-secondary/50 rounded-xs border p-4 transition-colors duration-300 ease-in-out"
 >
   <Link
     href={`/${entry.collection}/${entry.id}`}
@@ -63,7 +63,7 @@ const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
                     src={author.avatar}
                     alt={author.name}
                     fallback={author.name[0]}
-                    className="size-5 rounded-full"
+                    className="size-5 rounded-xs"
                   />
                   <span>{author.name}</span>
                 </div>
